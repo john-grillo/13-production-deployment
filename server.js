@@ -1,7 +1,10 @@
 'use strict';
 
+// Add environment variables so we can still run our app locally
+// - Create a .env file to hold the variables
+// - Use the npm package: dotenv to access process.env
 //DONE! include our new npm module that reads our .env file when running our server locally
-const env = require('env');
+require('dotenv').config();
 
 const pg = require('pg');
 const fs = require('fs');

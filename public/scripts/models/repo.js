@@ -22,7 +22,7 @@ var app = app || {};
 })(app);
 
 //replacement of .get with .ajax:
-// ajax({
+// $.ajax({
 //       url: `https://api.github.com/user/repos`,
 //       type: 'GET',
 //       headers: {'Authorization': `token ${githubToken}`}
