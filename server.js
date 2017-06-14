@@ -1,7 +1,7 @@
 'use strict';
 
-//TODO include our new npm module that reads our .env file when running our server locally
-
+//DONE! include our new npm module that reads our .env file when running our server locally
+const env = require('env');
 
 const pg = require('pg');
 const fs = require('fs');
