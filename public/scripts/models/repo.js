@@ -15,12 +15,13 @@ var app = app || {};
     .then(data => repos.all = data, err => console.error(err)) // es6 syntax arrow functions
     .then(callback);
   };
-  //deprecated: no longer needed since we aren't using an .ajax call.
-  //repos.with = attr => repos.all.filter(repo => repo[attr]);
+
+  repos.with = attr => repos.all.filter(repo => repo[attr]);
 
   module.repos = repos;
 })(app);
 
+//deprecated: no longer needed since we aren't using an .ajax call.
 //replacement of .get with .ajax:
 // $.ajax({
 //       url: `https://api.github.com/user/repos`,
